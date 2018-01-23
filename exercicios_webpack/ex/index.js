@@ -1,0 +1,1 @@
+console.log("O curso de React/Redux está funcionando perfeitamente!")

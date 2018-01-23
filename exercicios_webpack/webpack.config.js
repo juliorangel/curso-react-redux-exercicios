@@ -15,7 +15,7 @@ module.exports = {
 	output: { // referencia para o arquivo saída
 		path: __dirname + 'public', // caminho do arquivo de output (dirname é variavel de ambiente Node que representa o diretorio atual)
 		filename: './bundle.js' // arquivo de output
-	}
+	},
 	devServer: { // Servidor webpack focado em desenvolvimento que faz transpilling, recarrega o browser, etc..
 		port: 8080,  // porta
 		contentBase: './public' // pasta base onde vão estar os arquivos que o servidor ira carregar (a mesma onde estao bundle.js e o index.html que referencia o bundle.js)
