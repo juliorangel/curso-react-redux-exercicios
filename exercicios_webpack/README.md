@@ -8,6 +8,8 @@ ex_s1_s2: Section 1 (Introducao) e Section 2 (Webpack)
 	- lecture 9: logger.js
 	- lecture 10: duvidaCruel.js
 	- lecture 11: pessoa.js
+	- lecture 12: toda no arquivo webpack.config.js
+	- lecture 13:
 ex_s3: Section 3
 
 # URL do Curso #

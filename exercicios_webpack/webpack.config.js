@@ -19,5 +19,16 @@ module.exports = {
 	devServer: { // Servidor webpack focado em desenvolvimento que faz transpilling, recarrega o browser, etc..
 		port: 8080,  // porta
 		contentBase: './public' // pasta base onde vão estar os arquivos que o servidor ira carregar (a mesma onde estao bundle.js e o index.html que referencia o bundle.js)
+	},
+	module: { // Setting de modulos diversos como loaders, rules, etc.
+		loaders: [{ // array que carrega arquivos 
+			test: /.js?$/, // tipo de arquivo que o loader vai carregar (neste caso todos os arquivos javascript)
+			loader: 'babel-loader', // qual loader que será usado pra carregar os arquivos
+			exclude: /node_modules/, // pastas que serao excluidos da leitura e carregamento
+			query: { // atributo que define o que o loader deve interpretar (traduzir)
+				presets: ['es2015'], // preset que indica o EcmaScript2015. Poderia ser adicionado outros arquivos que quisesse ler e interpretar, como React, etc.
+				plugins: ['transform-object-rest-spread']  // plugin para Operador Spread (ver Section 1 Lecture 13)
+			}
+		}]
 	}
 }

@@ -39,6 +39,35 @@
 	lecture11_pessoa.js
 	TEMA: Browsers não reconhecem padrao import EcmaScript 2015, por isso precisam de um transpilling (Babel) para traduzir para JS antigos.
 */
-import Pessoa from './lecture11_pessoa'
-const pessoa = new Pessoa('Guilherme')
-console.log(pessoa.toString())
+// o import só funciona por causa das dependencias babel-core, babel-loader e babel-preset-es2015
+// import Pessoa from './lecture11_pessoa'
+// const pessoa = new Pessoa('Guilherme')
+// console.log(pessoa.toString())
+
+
+/* 
+	Exercicio: Section 2 Lecture 12
+	webpack.config.js
+	TEMA: Modulo do Babel ( module{ loader[{}]} )
+*/
+
+
+/* 
+	Exercicio: Section 2 Lecture 13
+	lecture11_pessoa.js
+	TEMA: Operador Spread (plugin Babel)
+*/
+const produto = {
+	nome: 'Caneta Bic Preta',
+	preco: 1.90,
+	desconto: 0.05
+}
+function clone(objeto) {
+	return { ...objeto } // Operador Spread (...) nao eh reconhecido pelo Babel, e precisa de um script adicional.
+	// A funcao clone recebe um objeto e retorna um objeto novo a partir dele
+	// A funcao Spread "espalha" todos os atributos do objeto recebido por Clone e coloca no novo objeto.
+	// Este operador so funciona com o plugin transform-object-rest-spread, instalado no webpack.config.js
+}
+const novoProduto = clone(produto)
+novoProduto.nome = 'Caneta Bic Azul'
+console.log(produto, novoProduto)
