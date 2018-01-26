@@ -34,6 +34,7 @@
 // console.log(pessoa.toString())
 
 
+
 /* 
 	Exercicio: Section 2 Lecture 11 :: exercicio 2
 	lecture11_pessoa.js
@@ -45,6 +46,7 @@
 // console.log(pessoa.toString())
 
 
+
 /* 
 	Exercicio: Section 2 Lecture 12
 	webpack.config.js
@@ -52,22 +54,57 @@
 */
 
 
+
 /* 
 	Exercicio: Section 2 Lecture 13
-	lecture11_pessoa.js
 	TEMA: Operador Spread (plugin Babel)
 */
-const produto = {
-	nome: 'Caneta Bic Preta',
-	preco: 1.90,
-	desconto: 0.05
-}
-function clone(objeto) {
-	return { ...objeto } // Operador Spread (...) nao eh reconhecido pelo Babel, e precisa de um script adicional.
-	// A funcao clone recebe um objeto e retorna um objeto novo a partir dele
-	// A funcao Spread "espalha" todos os atributos do objeto recebido por Clone e coloca no novo objeto.
-	// Este operador so funciona com o plugin transform-object-rest-spread, instalado no webpack.config.js
-}
-const novoProduto = clone(produto)
-novoProduto.nome = 'Caneta Bic Azul'
-console.log(produto, novoProduto)
+// const produto = {
+// 	nome: 'Caneta Bic Preta',
+// 	preco: 1.90,
+// 	desconto: 0.05
+// }
+// function clone(objeto) {
+// 	return { ...objeto } // Operador Spread (...) nao eh reconhecido pelo Babel, e precisa de um script adicional.
+// 	// A funcao clone recebe um objeto e retorna um objeto novo a partir dele
+// 	// A funcao Spread "espalha" todos os atributos do objeto recebido por Clone e coloca no novo objeto.
+// 	// Este operador so funciona com o plugin transform-object-rest-spread, instalado no webpack.config.js
+// }
+// const novoProduto = clone(produto)
+// novoProduto.nome = 'Caneta Bic Azul'
+// console.log(produto, novoProduto)
+
+
+
+/* 
+	Exercicio: Section 2 Lecture 14
+	webpack.config.js
+	TEMA: Preset do React
+*/
+// EXERCICIO 1
+// import 'react'
+// export default props => (
+// 	null
+// )
+// console.log('Funcionando, sem React, só com Babel!')
+
+// EXERCICIO 2
+// import 'react'
+// export default props => (
+// 	<h5>React</h5>
+// )
+// console.log('React Funcionando!')
+
+
+
+/* 
+	Exercicio: Section 2 Lecture 15
+	webpack.config.js
+	TEMA: Loader CSS (várias configuracoes de instalacao do ExtractTextPlugin no webpack.config.js, criacao de arquivo style.css e instalacoes de dependencias.)
+*/
+import './style.css'
+import 'react'
+export default props => (
+	<h5>React</h5>
+)
+console.log('React Funcionando!')

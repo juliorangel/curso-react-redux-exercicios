@@ -16,10 +16,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.22.1", // Babel Core
+    "babel-core": "^6.22.1", // Babel core
     "babel-loader": "^6.2.10", // babel loader, o que faz a interface entre o Webpack e o Babel Core.
     "babel-preset-es2015": "^6.22.0", // script que vai traduzir a sintaxe do ES2015 para linguagem JS de Browsers.
     "babel-plugin-transform-object-rest-spread": "^6.22.0", // script pra interpretar o Object Rest Spread (...) 
+    "css-loader": "^0.26.1", // loader de CSS
+    "extract-text-webpack-plugin": "^1.0.1", // plugin necessario para interpretar textos CSS
+    "react": "^15.4.2", // React core
+    "style-loader": "^0.13.1", // loader de CSS
     "webpack": "^1.14.0", // webpack
     "webpack-dev-server": "^1.16.2" // servidor webpack
   }
