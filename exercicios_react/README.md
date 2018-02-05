@@ -11,6 +11,8 @@ ex_s3: Section 3 (React)
 	- lecture 21: ex_section3_lecture21
 	- lecture 22: ex_section3_lecture22
 	- lecture 23: ex_section3_lecture23
+	- lecture 24: ex_section3_lecture24
+	- lecture 25-28: ex_section3_lecture25-28
 
 # URL do Curso #
 https://www.udemy.com/react-redux-pt/learn/v4/overview

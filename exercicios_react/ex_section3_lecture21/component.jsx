@@ -10,6 +10,7 @@ Os componentes react podem ser criados de duas formas:
 import React from 'react' // necessario para qualquer component React
 
 // Componente com base em Função Arrow (=>) (demonstracao com export direto na funcao)
+// Existe um RETURN implícito em toda função arrow.
 export default () => ( 
 	// tudo o que esta dentro do parentese (expressao) sera retornado (return)
 	<h5>Function component arrow</h5>
