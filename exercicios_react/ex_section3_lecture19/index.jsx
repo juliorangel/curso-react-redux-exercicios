@@ -1,3 +1,7 @@
+
+// leia o import como:
+// "import (importe para a variável) React from (tudo o que estiver dentro de) 'react'
+
 import React from 'react' // necessario para todos os componentes
 import ReactDOM from 'react-dom' // o ReactDOM eh necessario somente para pegar toda nossa aplicação e jogar dentro da pagina html
 
