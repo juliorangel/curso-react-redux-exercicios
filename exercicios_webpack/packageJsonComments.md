@@ -9,7 +9,7 @@
     // Test: Este script de teste deve ser retirado para dar vez ao script debaixo.
     // "test": "echo \"Error: no test specified\" && exit 1"
 
-    // Dev: Esse script chama o servidor do webpack (no terminal, digitar npm run dev) e algumas flags (--algo). O --inline --hot faz o browser atualizar sempre que houver mudança nos codigos.
+    // Dev: Esse script chama o servidor do webpack (no terminal, digitar npm run dev) e algumas flags (--algo). O --inline --hot // faz o browser atualizar sempre que houver mudança nos codigos.
     "dev": "webpack-dev-server --progress --colors --inline --hot"
   },
   "keywords": [],

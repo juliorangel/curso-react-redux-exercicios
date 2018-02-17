@@ -1,4 +1,4 @@
-# Exercicios Webpack #
+# Exercicios React #
 Curso de react/redux na Udemy.
 Cada exercício está alocado em pastas nomeadas "ex".
 Para trocar a visualizacao da pasta, é preciso mudar o path de referencia ENTRY no webpack.config.js.
