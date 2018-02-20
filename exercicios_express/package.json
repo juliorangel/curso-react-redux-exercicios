@@ -1,0 +1,11 @@
+{
+  "name": "exercicios_express",
+  "version": "1.0.0",
+  "description": "Curso de react/redux na Udemy. Cada exercício está alocado em pastas nomeadas \"ex\". Para trocar a visualizacao da pasta, é preciso mudar o path de referencia ENTRY no webpack.config.js.",
+  "main": "index.js",
+  "author": "Julio Rangel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
