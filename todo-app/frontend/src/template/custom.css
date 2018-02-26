@@ -1,0 +1,24 @@
+.btn {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.markedAsDone {
+	text-decoration: line-through;
+	color: #a2a2a2;
+}
+
+.tableActions {
+	width: 196px;
+}
+
+table {
+	margin-top: 64px !important;
+	margin-left: 16px !important;
+}
+td, th {
+	vertical-align: middle !important;
+}
+th {
+	height: 48px;
+}

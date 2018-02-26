@@ -5,7 +5,8 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon", // para desenvolvimento usaremos o nodemon
-    "production": "pm2 start src/loader.js --name todo-app"  // para producao, usaremos o pm2, mais robusto. Dizemos qual o arquivo e qual a aplicacao que vai aparecer no painel de controle do pm2.
+    "production": "pm2 start src/loader.js --name todo-app",  // para producao, usaremos o pm2, mais robusto. Dizemos qual o arquivo e qual a aplicacao que vai aparecer no painel de controle do pm2.
+    "production-monitor": "./node_modules/.bin/pm2 monit" // roda o production mas com o monitor do pm2
   },
   "keywords": [],
   "author": "",

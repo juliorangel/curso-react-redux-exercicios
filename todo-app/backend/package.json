@@ -5,7 +5,8 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "production": "pm2 start src/loader.js --name todo-app",
+    "production-monitor": "./node_modules/.bin/pm2 monit"
   },
   "keywords": [],
   "author": "",
